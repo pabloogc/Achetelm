@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>Práctica Pablo Orgaz</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link type="text/css" rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="mainBlock">
+    <div class="headerContainer">
+        <div class="header">TDW • Pablo Orgaz</div>
+        <div class="tabs">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="basic.html">Html</a></li>
+                <li><a href="tables.html">Tablas</a></li>
+                <li class="selected"><a href="form.html">Formularios</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mainBlockInside">
+        <h4>Formulario de Conctacto</h4>
+
+        <form id="contactForm" action="form.html" method="post">
+            <table>
+                <colgroup>
+                    <col>
+                    <col>
+                </colgroup>
+                <tr>
+                    <td><label for="name">Nombre: </label></td>
+                    <td><input id="name" type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="surname">Apellidos: </label></td>
+                    <td><input id="surname" type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">e-mail: </label></td>
+                    <td><input id="email" type="email"></td>
+                <tr>
+                    <td>Rol:</td>
+                    <td>
+                        <label for="teacher">Profesor</label>
+                        <input name="role" id="teacher" type="radio">
+                        <label for="student">Alumno</label>
+                        <input name="role" id="student" type="radio">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="identifier">Matrícula / Código: </label></td>
+                    <td><input id="identifier" type="text" pattern="\w\w\d+|\d+" placeholder="bi0600"></td>
+                </tr>
+                <tr>
+                    <td><label for="reason">Motivo: </label></td>
+                    <td>
+                        <select id="reason" name="reason">
+                            <option value="problem_html">Problema con HTML</option>
+                            <option value="problem_css">Problema con CSS</option>
+                            <option value="problem_js">Problema con JS</option>
+                            <option value="problem_other">Otro</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="comments">Comentarios: </label></td>
+                    <td><textarea id="comments"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="acceptTerms">Incluir información<br> del navegador: </label></td>
+                    <td><input id="acceptTerms" type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <input type="submit" value="Enviar" class="simpleButton">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <p>
+            <a href="http://validator.w3.org/check?uri=referer"><img
+                    src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Transitional" height="31"
+                    width="88"></a>
+        </p>
+    </div>
+</div>
+</body>
+</html>

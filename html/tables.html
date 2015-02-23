@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>Práctica Pablo Orgaz</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link type="text/css" rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="mainBlock">
+    <div class="headerContainer">
+        <div class="header">TDW • Pablo Orgaz</div>
+        <div class="tabs">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="basic.html">Html</a></li>
+                <li class="selected"><a href="tables.html">Tablas</a></li>
+                <li><a href="form.html">Formularios</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mainBlockInside">
+        <p>Tabla básica para posicionar elementos</p>
+        <table style="border: 0">
+            <tr>
+                <td>
+                    <video src="http://video.webmfiles.org/big-buck-bunny_trailer.webm"
+                           controls="controls"
+                           width="460"
+                           loop="loop"
+                           autoplay="autoplay"
+                           muted="muted"></video>
+                </td>
+                <td style="text-align: justify; vertical-align: bottom">
+                    <h4>Lorem Lorem</h4>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+                    quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+                    imperdiet a, venenatis vitae, justo.
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: justify; vertical-align: bottom">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Aenean commodo ligula eget
+                    dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                    massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
+                    rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
+                    tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo
+                    ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra
+                    quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+                    imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
+                    rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet
+                    adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+                    Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam
+                    quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet
+                    nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus
+                    nunc,
+                </td>
+            </tr>
+        </table>
+
+        <p>Tabla con la información de un horario</p>
+
+        <table class="timeTable">
+            <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <tr>
+                <th></th>
+                <th>L</th>
+                <th>M</th>
+                <th>X</th>
+                <th>J</th>
+                <th>V</th>
+                <th>S</th>
+                <th>D</th>
+            </tr>
+            <tr>
+                <td>9:00</td>
+                <td>TDW</td>
+                <td rowspan="11"></td>
+                <td rowspan="2"></td>
+                <td rowspan="9"></td>
+                <td>Programación<br>Declarativa</td>
+                <td colspan="1" rowspan="11"></td>
+                <td colspan="1" rowspan="11"></td>
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <td rowspan="8"></td>
+                <td rowspan="10"></td>
+            </tr>
+            <tr>
+                <td>11:00</td>
+                <td rowspan="2">TDW</td>
+            </tr>
+            <tr>
+                <td>12:00</td>
+            </tr>
+            <tr>
+                <td>13:00</td>
+                <td rowspan="7"></td>
+            </tr>
+            <tr>
+                <td>14:00</td>
+            </tr>
+            <tr>
+                <td>15:00</td>
+            </tr>
+            <tr>
+                <td>16:00</td>
+            </tr>
+            <tr>
+                <td>17:00</td>
+            </tr>
+            <tr>
+                <td>18:00</td>
+                <td rowspan="2">Data Mining</td>
+                <td rowspan="2">
+                    <table>
+                        <tr>
+                            <td rowspan="2">DM</td>
+                            <td>Clase</td>
+                        </tr>
+                        <tr>
+                            <td>Laboratorio</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>19:00</td>
+            </tr>
+        </table>
+        <p>
+            <a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-html401"
+                                                                     alt="Valid HTML 4.01 Transitional" height="31"
+                                                                     width="88"></a>
+        </p>
+    </div>
+</div>
+</body>
+</html>

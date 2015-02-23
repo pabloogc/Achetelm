@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head lang="en">
+    <title>Práctica Pablo Orgaz</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link type="text/css" rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="mainBlock">
+    <div class="headerContainer">
+        <div class="header">TDW • Pablo Orgaz</div>
+        <div class="tabs">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="selected"><a href="basic.html">Html</a></li>
+                <li><a href="tables.html">Tablas</a></li>
+                <li><a href="form.html">Formularios</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mainBlockInside">
+        <h4>HTML Básico</h4>
+
+        <p><i>Nota: Esta página esta construida usando HTML 4 y CSS3. En esta versión los tags de estilo son correctos
+            pero algunos validadores los consideran como errores o warnings.
+            erróneos.</i></p>
+        <ul>
+            <li><a href="#p1">Párrafos</a></li>
+            <li><a href="#p2">Pre</a></li>
+            <li><a href="#p3">Estilos de texto</a></li>
+            <li><a href="#p4">Listas</a></li>
+        </ul>
+
+        <p id="p1">
+            Párrafos con saltos de línea usando <code>br</code><br>
+            Segunda línea en el mismo párrafo
+        </p>
+        <hr>
+        <p align="right" id="p2">
+            Texto alineado a la derecha con <code>align="right"</code>
+        </p>
+
+        <p align="center">
+            O al centro <code>align="center"</code>
+        </p>
+        <hr>
+        <pre id="p3">
+            Texto preformateado con &lt;pre&gt; {
+                Útil para escribir código o conservar espacios
+            }
+        </pre>
+        <hr>
+        <p>
+            Estilos de texto: <b>negrita</b>, <i>italics</i>, con super<sup>índice</sup> o
+            <b><i><sub>c</sub>ombi<sup>nadas</sup></i></b>. Todas en desuso, se utiliza
+            CSS.
+        </p>
+
+        <p>
+            Estilos lógicos como fórmulas con <code>em</code>: <em>f(x) = x<sup>2</sup></em>. También en desuso.
+        </p>
+
+        <p>
+            Estilos de fuente: <font face="verdana" size="+2" color="green">Verdana +2 Color verde</font>.
+        </p>
+        <hr>
+        <p id="p4">Listas</p>
+        <dl>
+            <dt>Ordenadas
+            <dt>
+            <dd>Listas con números ordinales</dd>
+            <dt>No ordenadas</dt>
+            <dd>Simplemente listas de elementos</dd>
+            <dt>De definición</dt>
+            <dd>Glosario y definición; Esta misma lista</dd>
+        </dl>
+        <hr width="50%" align="left">
+        <p>Listas ordenadas. Las listas no ordenadas son iguales pero no están numeradas</p>
+        <ol>
+            <li>Elemento 1</li>
+            <li>Elemento 2: El contenido puede ser cualquier otro elemento, como una imagen<br> <img
+                    src="http://i.imgur.com/ASeQTsf.png?1" alt="psyduck" width="48" height="48"></li>
+            <li value="5">Los índices se pueden modificar</li>
+        </ol>
+        <a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-html401"
+                                                                 alt="Valid HTML 4.01 Transitional" height="31"
+                                                                 width="88"></a>
+    </div>
+</div>
+</body>
+</html>
