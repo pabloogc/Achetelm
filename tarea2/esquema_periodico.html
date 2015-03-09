@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>Untitled</title>
+    <style type="text/css">
+
+        body {
+            margin: 0px;
+        }
+        
+        h1 {
+            color: red;
+            font-weight: normal;
+            margin-top: 0px
+        }
+        
+        p {
+            margin: 5px 5px 5px 5px;
+            text-align: justify;
+        }
+
+        #contenido {
+            width: 100%;
+        }
+
+        #periodico, #economia, #publicacion, #distribucion {
+            color: green;
+            text-transform: uppercase;
+            padding-left: 20%;
+        }
+
+        #periodico {
+            margin-top: 30px;
+            margin-bottom: -5px;
+        }
+
+        #economia {
+            font-weight: bold;
+            font-size: 3em;
+            margin-bottom: -14px;
+        }
+
+        #distribucion {
+            text-transform: none;
+            text-align: right;
+            position: absolute;
+            right: 0;
+            left: auto;
+            top: 0;
+            padding-right: 10px;
+            border-right: 4px solid green;
+            margin-right: 40px;
+            margin-left: 40px;
+            padding-top: 20px;
+        }
+
+        #publicacion {
+            color: white;
+            background: green;
+        }
+
+        #quincena, #anio {
+            margin-right: 40px;
+            margin-left: 40px;
+        }
+
+        #quincena, #anio {
+            float: left;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+
+        #anio {
+            float: right;
+            margin-left: auto;
+        }
+
+        #columnaizquierda, #centralarriba {
+            border: 0px solid red;
+        }
+        
+        #columnaizquierda {
+            clear: both;
+            background: orange;
+            width: 200px;
+            position: absolute;
+            left: 0px;
+            top: 140px;
+            padding: 10px;
+            margin-left: 40px
+        }
+
+        #centralarriba {
+            position: absolute;
+            left: 280px;
+            top: 140px;
+            margin-right: 40px;
+        }
+        
+        #centralarribacolumna1, #centralarribacolumna2, #centralarribacolumna3, #centralarribacolumna4 {
+            width: 25%;
+            float: left;
+        }
+        
+        #centralarribacolumna4 {
+            position: relative;
+            top: -240px;
+        }
+        
+        #centralarribatabla {
+            background: orange;
+            border-top: 4px solid black;
+            padding: 10px 0 0 0;
+            width: 48%;
+            display: inline-table;
+            height: 190px;
+            margin: 0 1% 0 1%;
+        }
+        
+        #centralarribatabla p, #centralarribatabla table {
+            width: 90%;
+            margin-left: 5%;
+        }
+        
+        #centralarribatabla table {
+            background: white;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+        
+        
+        #centralarribatabla table td {
+            border-bottom: solid black 1px;
+            padding: 2px;
+        }
+        
+        #centralarribatabla p {
+            font-weight: bold;
+        }
+        
+        #fuente, #laeconomia {
+            width: 25%;
+            margin-left: 26%;
+            font-size: 10px;
+            height: 20px;
+        }
+        
+        #fuente {
+            width: auto;
+        }
+        
+        #laeconomia {
+            text-align: right;
+            margin-top: -20px;
+            margin-left: 49%;
+            color: blue;
+        }
+            
+
+    </style>
+</head>
+<body>
+<div id="contenido">
+    <div id="periodico">El Periódico de la</div>
+    <div id="economia">Economía</div>
+    <div id="distribucion">Distribución<br/>Gratuita<br/></div>
+    <div id="publicacion">Publicación para el Inversor</div>
+    <div id="quincena">2ª Quincena/Marzo 2008</div>
+    <div id="anio">Año 4 Nº 51</div>
+    <div id="columnaizquierda">
+        <div id="sumario">Sumario</div>
+        <h3>FOTOVOLTAICA</h3>
+        <h4>Apogeo y caída de Solaria</h4>
+
+        <p class="primero">La trayectoria del fabricante de paneles en Bolsa ha pasado
+            del éxito al pinchazo en menos de un año. Su cotización está por debajo del
+            nivel de su estren, después de haberse triplicado.</p>
+
+        <p class="paginaizquierda">Página 5</p>
+
+        <h3>COYUNTURA</h3>
+        <h4>Aumentan los aprobados</h4>
+
+        <p class="primero">La perfecta comunión entre el profesorado y los alumnos de la
+            Escuela de Informática de la U.P.M. se ha manifestado en el aumento
+            espectacular del número de aprobados en las asignaturas como Algorítmica,
+            Bases de Datos y TDSW</p>
+    </div>
+    <div id="centralarriba">
+        <h1 id="centralarribah1">Europa gana el contrato del siglo</h1>
+
+        <h2 id="centralarribah2">EADS ha ganado la batalla por el suministro de 179 aviones al Ejército de
+            Estados Unidos. El candidato McCain denunció en 2004 prácticas ilegales en
+            una preadjudicacióna Boeing</h2>
+
+        <div id="centralarribacolumna1">
+            <p class="primero">
+                La adjudicación al grupo europeo aeroespacial EADS de un contrato por un
+                valor en torno a los 40.000 millones de dólares para renovar los aviones
+                cisterna de las fuerzas aéreas de Estados Unidos ha generado ampollas al
+                otro lado del Atlántico.</p>
+
+            <p>Los tres candidatos en liza a la presidencia del país lo han sacado a
+                colación. Igual que el presidente del gobierno español, quien hizo alarde
+                en su debate con el jefe de la oposición de los avances de la tecnología
+                española en esta actividad. EADS Casa es la encargada de los desarrollos
+                de la división de aviones de transporte militar del grupo a la que pertenece
+                el proyecto A-330-MRTT que consiste en la adaptación de un Airbus
+                A-330-200 de carga como un</p>
+        </div>
+        <div id="centralarribatabla">
+            <p>Pedidos de aviones cisterna</p>
+            <table>
+                <tr>
+                    <td>EEUU</td>
+                    <td>2008</td>
+                    <td class="alineacionderecha">179</td>
+                    <td class="alineacionderecha">Airbus</td>
+                </tr>
+                <tr>
+                    <td>Arabia Saudí</td>
+                    <td>2007</td>
+                    <td class="alineacionderecha">3</td>
+                    <td class="alineacionderecha">Airbus</td>
+                </tr>
+                <tr>
+                    <td>UAE</td>
+                    <td>2008</td>
+                    <td class="alineacionderecha">179</td>
+                    <td class="alineacionderecha">Airbus</td>
+                </tr>
+                <tr>
+                    <td>Australia</td>
+                    <td>2004</td>
+                    <td class="alineacionderecha">5</td>
+                    <td class="alineacionderecha">Airbus</td>
+                </tr>
+                <tr>
+                    <td>Reino Unido</td>
+                    <td>2004</td>
+                    <td class="alineacionderecha">5</td>
+                    <td class="alineacionderecha">Airbus</td>
+                </tr>
+                <tr>
+                    <td>Japón</td>
+                    <td>2003</td>
+                    <td class="alineacionderecha">4</td>
+                    <td class="alineacionderecha">Boeing</td>
+                </tr>
+                <tr>
+                    <td>Italia</td>
+                    <td>2002</td>
+                    <td class="alineacionderecha">4</td>
+                    <td class="alineacionderecha">Boeing</td>
+                </tr>
+            </table>
+        </div>
+        <div id="fuente">
+            Fuente: Las propias compañías
+        </div>
+        <div id="laeconomia">
+            La Economía
+        </div>
+        <div id="centralarribacolumna2">
+            <p class="primero">avión cisterna para el abastecimiento en vuelo, así
+                como para el transporte de tropas y mercancías. El contrato supone la
+                entrega de 179 unidades y la más que probable colaboración en una
+                posición privilegiada para la renovación total de una flota integrada
+                por 600 aviones.
+            </p>
+
+            <p>La noticia ha supuesto un duro golpe para Boeing y no sólo por no
+                haber alcanzado</p>
+        </div>
+        <div id="centralarribacolumna3">
+            <p class="primero">el contrato en su propia casa. Hace cuatro años, el candidato
+                actual por el partido republicano a la presidencia de los Estados Unidos
+                de América denunció como senador de Arizona prácticas ilegales en la
+                preadjudicación de un contrato semejante para la renovación de una
+                parte de sus viejos aviones cisterna.
+            </p>
+
+            <p>
+                El contrato supone un importantísimo respaldo para
+            </p>
+        </div>
+        <div id="centralarribacolumna4">
+            <p class="primero">
+                el fabricante europeo por parte del principal cliente del
+                estadounidense y supone una importante plataforma para su desembarco
+                en EEUU, donde se ensamblará el avión. EADS tiene la esperanza de aumentar su actividad
+                considerablemente fuera de Europa para hacer frente a las dificultades
+                que supone la constante revalorización del euro.
+            </p>
+
+            <p>El último proceso de adjudicación terminó el fin de semana pasado.
+                EADS ha acudido de la mano de la compañía norteamericana Northrop
+                Grumman que se encargará, entre otras cosas, del ensamblaje de los
+                aviones en la planta de Mobile en el Estado de Alabama.
+            </p>
+            <p class="pagina">Página 5</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

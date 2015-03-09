@@ -1,0 +1,50 @@
+<html>
+<head><title>Visor de imágenes</title>
+
+<script language='javascript'>
+ var fotos = new Array ('Img0.gif','Img1.gif','Img2.gif','Img3.gif');
+
+ function Siguiente(){
+   }
+
+ function Anterior(){
+   }
+
+  function Ultima(){
+    }
+
+  function Primera(){
+    }    
+        
+</script>
+
+</head>
+
+<body>
+<center><font size=6 color='blue'>Visor de imágenes<br><br><Hr color='blue'><br>
+<form name='formul'>
+ <table border=1>
+  <tr><td colspan='4' align='center'>
+      <image src="Img0.gif" name='visor' height='150' width='165'>
+      </td>
+  </tr>
+  <tr>
+      <td align='center'>
+      <input type='button' onclick='Primera()' value='  |<<  '>
+      </td>
+      <td align='center'>
+      <input type='button' onclick='Anterior()' value='  <<  '>
+      </td>
+      <td align='center'>
+      <input type='button' onclick='Siguiente()' value='  >>  '>
+      </td>
+      <td align='center'>
+      <input type='button' onclick='Ultima()' value='  >>|  '>
+      </td>
+  </tr>
+ </table>
+</form>
+<hr color='blue'></font></center>
+</body>
+</html>
+
