@@ -1,0 +1,33 @@
+:not(body) {
+    color: magenta;
+}
+
+body {
+    font: 12pt "Times New Roman"
+    /*Hey Roman, let's go bowling*/
+    /*Not now cousin*/
+}
+
+.mayusculas {
+    text-transform: uppercase;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.capitalizado {
+    text-transform: capitalize;
+    border-bottom: 1px solid orange;
+}
+
+p {
+    text-indent: 2em;
+    text-align: justify;
+}
+
+h1 {
+    text-decoration: underline overline;
+    text-transform: capitalize;
+    font-weight: normal;
+}

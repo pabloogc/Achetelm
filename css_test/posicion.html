@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+        * {
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        }
+        
+        #divBlue:before {
+            content: '<br><br>';
+        }
+
+        div {
+            color: white;
+            padding: 10px;
+            width: 250px;
+            height: 250px;
+            border: 3px solid black;
+        }
+
+        #divBlue {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            background: rgb(0, 0, 255);
+            -webkit-animation: rotate 5s linear;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            -webkit-animation-duration: 4s;
+        }
+
+        #divRed {
+            position: absolute;
+            top: 150px;
+            left: 150px;
+            background: rgb(255, 0, 0);
+        }
+
+        @-webkit-keyframes rotate {
+            from {
+                -webkit-transform: rotate(0deg);
+                left: 100px;
+            }
+            to {
+                -webkit-transform: rotate(360deg);
+                left: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+<p>Pulsa en la capa situada por debajo</p>
+
+<div id="divBlue">Red red red Erd Der</div>
+<div id="divRed">Red red red Erd Der</div>
+</body>
+</html>
