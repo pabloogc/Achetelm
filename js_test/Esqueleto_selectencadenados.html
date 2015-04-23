@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>Ejemplo de Listas Desplegables Encadenadas</title>
+    <script language="JavaScript">
+
+        valores1 = ["Africa", "Am�rica", "Asia", "Europa", "Ocean�a"];
+        fila1 = ["El Cairo", "Ceuta", "Melilla"];
+        fila2 = ["La Paz", "Buenos Aires", "New York", "Caracas", "La Habana"];
+        fila3 = ["Pekin", "Tokio", "Kabul", "Hong Kong"];
+        fila4 = ["Madrid", "Paris", "Londes", "Berlin", "Lisboa"];
+        fila5 = ["Sidney", "Camberra", "Melbourne"];
+        valores2 = [fila1, fila2, fila3, fila4, fila5];
+
+        function escribir_opciones_select(valores) {
+            cadena = "";
+            for (var i = 0; i < valores.length; i++)
+                cadena = cadena + '<option value="' + valores[i] + '">' +
+                valores[i] + '</option>\n';
+            // alert(cadena);
+            document.write(cadena);
+        }
+
+        function cambiar_select_2() {
+            var select1 = document.getElementById("select1");
+            var select2 = document.getElementById("select2");
+            select2.length = 0;
+            var fila = valores2[select1.selectedIndex];
+            fila.forEach(function (e) {
+                select2.options[select2.length] = new Option(e, e);
+            });
+        }
+
+    </script>
+</head>
+<body>
+<center>
+    <form name="formulario">
+
+        <br><br>
+
+        <h1>Ciudades del Mundo</h1>
+        <br><br>
+        <b>Continente:</b>
+        <select id="select1" name="select_1"
+                onChange="cambiar_select_2()">
+            <SCRIPT LANGUAGE="JavaScript">
+                escribir_opciones_select(valores1);
+            </script>
+        </select>
+        &nbsp;&nbsp;&nbsp;
+        <b>Ciudad:</b>
+        <select id="select2" name="select_2">
+            <script language="JavaScript">
+                escribir_opciones_select(valores2[0])
+            </script>
+        </select><br>
+
+    </form>
+
+</center>
+</body>
+</html>

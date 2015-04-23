@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>Reloj</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<style scoped="">
+
+    body {
+        margin: 0;
+    }
+
+    #container {
+        width: 400px;
+        height: 400px;
+        background: orange;
+    }
+
+    #s, #m, #h {
+        position: absolute;
+        width: 1px;
+        height: 200px;
+        background: black;
+        -webkit-transform-origin: 50% 100%;
+    }
+
+</style>
+<div id="container" style="width: 400px; height: 400px;">
+    <div id="s"></div>
+    <div id="m"></div>
+    <div id="h"></div>
+</div>
+</body>
+<script language='JavaScript'>
+    container = document.getElementById("container");
+    s = document.getElementById("s");
+    m = document.getElementById("m");
+    h = document.getElementById("h");
+
+    var WIDTH = parseInt(container.style.width);
+    var HEIGHT = parseInt(container.style.height);
+
+    m.style.left = (WIDTH / 2) + 'px';
+    h.style.left = (WIDTH / 2) + 'px';
+    s.style.left = (WIDTH / 2) + 'px';
+
+    setInterval(function () {
+        var date = new Date();
+        s.style.webkitTransform = 'rotate(' + (date.getSeconds() * 6 + 6 * date.getMilliseconds() / 1000 ) + 'deg)';
+        m.style.webkitTransform = 'rotate(' + (date.getMinutes() * 6 + date.getSeconds() / 10 ) + 'deg)';
+        h.style.webkitTransform = 'rotate(' + (date.getHours() * 2.5 ) + 'deg)';
+    }, 10)
+</script>
+</html>
+

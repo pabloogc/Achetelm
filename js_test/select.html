@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form method="post" action="http://etsisi.upm.es/~salonso/tdw/procesa.php">
+    <select title="Ciudades" id="select">
+        <option value="Hola1">Hola1</option>
+        <option value="Hola2">Hola2</option>
+        <option value="Hola3">Hola3</option>
+        <option value="Hola4">Hola4</option>
+    </select>
+    <label>
+        Nombre:
+        <input type="text" id="key">
+    </label>
+    <label>
+        Valor:
+        <input type="text" id="value">
+    </label>
+    <input type="button" value="Añadir" id="add">
+    <input type="submit">
+</form>
+<script>
+    var select = document.getElementById("select");
+    select.addEventListener("change", function () {
+        alert(select.value);
+    });
+
+    var button = document.getElementById("add");
+    button.addEventListener("click", function () {
+        var key = document.getElementById("key").value;
+        var value = document.getElementById("value").value;
+        select.options[select.length] = new Option(key, value);
+
+    });
+</script>
+</body>
+</html>

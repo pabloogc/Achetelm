@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>Cálculo DNI</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <br>
+    <center>Ejemplos HTML</center>
+    <hr>
+    <form>
+        <input type="date" id="dateInput">
+        <input type="button" value="Después de 90 días" id="boton">
+    </form>
+    <p id="after90Days"></p>
+    <script language='JavaScript'>
+        var ONE_DAY = 1000 * 60 * 60 * 24;
+        document.getElementById("boton").onclick = function() {
+            var dateInput = new Date(document.getElementById("dateInput").value);
+            var newDate = new Date();
+            newDate.setTime(dateInput.getTime() + ONE_DAY);
+            document.getElementById("after90Days").innerHTML += newDate.toJSON() + "<br>";
+            document.getElementById("after90Days").innerHTML += dateInput.toJSON();
+        };
+    </script>
+</body>
+
+</html>
+

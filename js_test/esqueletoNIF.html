@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Cálculo DNI</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <br>
+    <center>Cálculo de N.I.F.</center>
+    <hr>
+    <form>
+        <input type="text" id="dniInput">
+        <input type="button" value="Comprobar Letra" id="dniComprobar">
+    </form>
+    <p id="letraSalida"></p>
+    <script language='JavaScript'>
+        var Letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+
+        document.getElementById("dniComprobar").onclick = function() {
+            var dniInput = document.getElementById("dniInput").value;
+            var letra = Letras[dniInput % 23];
+            document.getElementById("letraSalida").innerHTML = letra;
+        };
+    </script>
+</body>
+
+</html>
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<style scoped="">
+    @-webkit-keyframes bounce {
+        from {
+            top: 0;
+        }
+        to {
+            top: 200px;
+        }
+    }
+</style>
+<img id="image" src="http://cdn.ithinkdiff.com/wp-content/uploads/2009/03/koala.jpg"
+     style="
+     position: absolute;
+     width: 200px;
+     left: 0;
+     /*-webkit-animation: bounce;*/
+     -webkit-animation-duration: 3s;
+     -webkit-animation-iteration-count: infinite;">
+
+<script language="javascript">
+    var img = document.getElementById("image");
+    document.addEventListener('keydown', function (event) {
+        var left = parseInt(img.style.left);
+        if (event.keyCode == 65) {
+            left -= 10;
+        } else if (event.keyCode == 68) {
+            left += 10;
+        }
+
+        img.style.left = left + 'px';
+
+    })
+</script>
+</body>
+</html>

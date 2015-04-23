@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+    <title>Untitled</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: green;
+            font-size: 14px;
+            font-family: "Arial Narrow", "Bank Gothic Medium BT";
+        }
+
+        a:hover {
+            font-weight: bold;
+        }
+
+        .caja { border: 1px; border-style: solid; border-color: black; width: 200px; height: 400px; background-color: #FFFBAD; }
+    </style>
+    <script language="JavaScript" type="text/javascript"><!--
+    var elementos = new Array(10);
+    var pertenece = [1, 2, 1, 1, 1, 2, 1, 1, 1, 1];
+    elementos[0] = "Aguado Perez, Xavi";
+    elementos[1] = "Alvarez Rodriquez, Juan";
+    elementos[2] = "Delgado Martinez, Mari";
+    elementos[3] = "Fernndez Fernndez, Petra";
+    elementos[4] = "Garca Martn, Dominguito";
+    elementos[5] = "Hernndez Prez, Julia";
+    elementos[6] = "Jimenez Ochoa, Ral";
+    elementos[7] = "Jimenez Zato, Jose";
+    elementos[8] = "Rodriguez Fernndez, Alberto";
+    elementos[9] = "Simeone, Diego";
+
+    function Cambiar(i) {
+        var izq = document.getElementById("izquierda");
+        var der = document.getElementById("derecha");
+        izq.innerHTML = "";
+        der.innerHTML = "";
+        pertenece[i] = pertenece[i] == 1 ? 2 : 1;
+        escribir_capas();
+    }
+
+
+    function escribir_capas() {
+        var izq = document.getElementById("izquierda");
+        var der = document.getElementById("derecha");
+        for (var i = 0; i < elementos.length; i++) {
+            if (pertenece[i] == 1)
+                izq.innerHTML += '<a href="javascript:Cambiar(' + i + ')">' + elementos[i] + '<br></a>';
+            else
+                der.innerHTML += '<a href="javascript:Cambiar(' + i + ')">' + elementos[i] + '<br></a>';
+        }
+    }
+
+
+    //-->
+    </script>
+</head>
+<body onLoad="escribir_capas()">
+<CENTER><h1>INTERCAMBIADOR DE ELEMENTOS</h1></CENTER>
+<div id="izquierda"
+     style="position:absolute;left:50px;top:150px;border: 1px;border-style: solid;border-color: black;width:200px;height:200px;background-color:#FFFBAD;">
+</div>
+<div id="derecha" style="position:absolute;width:200px;height:200px;
+           left:400px;top:150px;border: 1px;border-style: solid;border-color: black;background-color:#FFFBAD;">
+</div>
+</body>
+
+</html>
+

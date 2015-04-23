@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>selects</title>
+    <script language="javascript">
+
+
+        function sube() {
+            var select = document.getElementById("select");
+            if (select.selectedIndex > 0) {
+                var first = select.options[select.selectedIndex - 1];
+                var second = select.options[select.selectedIndex];
+                var tmpText = first.text;
+                var tmpValue = first.value;
+                first.text = second.text;
+                first.value = second.value;
+                second.text = tmpText;
+                second.value = tmpValue;
+                select.selectedIndex--;
+            }
+        }
+
+        function baja() {
+            var select = document.getElementById("select");
+            if (select.selectedIndex < select.options.length - 1) {
+                var first = select.options[select.selectedIndex];
+                var second = select.options[select.selectedIndex+1];
+                var tmpText = first.text;
+                var tmpValue = first.value;
+                first.text = second.text;
+                first.value = second.value;
+                second.text = tmpText;
+                second.value = tmpValue;
+                select.selectedIndex++;
+            }
+        }
+
+    </script>
+</head>
+<body>
+<center>
+    <h2><font color='blue'> Movimiento de elementos en un "select"</font></h2>
+    <br><br><br>
+
+    <form name="el_form">
+        <hr>
+        <Table>
+            <tr>
+                <td>
+                    <select size=8 name="el_select" id="select">
+                        <option value='BMW' selected>BMW</option>
+                        <option value='Audi'>Audi</option>
+                        <option value='Mercedes'>Mercedes</option>
+                        <option value='Renault'>Renault</option>
+                        <option value='Ford'>Ford</option>
+                        <option value='Seat'>Seat</option>
+                        <option value='VW'>Volswagen</option>
+                        <option value='Citroen'>Citroen</option>
+                    </Select>
+                </td>
+                <td align='middle'><Input type='button' Value="Subir" onclick='sube()'><br>
+                    <Input type='button' Value="Bajar" onclick='baja()'>
+                </td>
+            </tr>
+        </Table>
+
+    </form>
+    <hr>
+</center>
+</body>
+</html>

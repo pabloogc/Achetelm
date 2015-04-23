@@ -1,0 +1,11 @@
+body {
+    margin-top: 10px;
+}
+
+.options {
+    text-align: right;
+    /*font-size: 2em;*/
+    border-bottom: 1px lightblue solid;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}

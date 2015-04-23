@@ -1,0 +1,33 @@
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+<script language="javascript">
+    var validCharacters = 'aeiou';
+    function valid(char) {
+        return validCharacters.indexOf(char) != -1;
+    }
+
+    function validString(input) {
+        var ok = true;
+        var i = 0;
+        for (; i < input.value.length && ok; i++) {
+            ok = ok && valid(input.value.charAt(i));
+        }
+        if (!ok)
+            alert("Error en elemento en positcion " + (i + 1));
+
+    }
+</script>
+
+<form>
+    <label>
+        Introduce mierda:
+        <input type="text" id="check" onblur="validString(this)">
+    </label>
+</form>
+
+</body>
+</html>
+
